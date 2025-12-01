@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --primary-color: #fb8663;
+}
+
+body{
+    font-family: "Alexandria", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #272727;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: white;
+}

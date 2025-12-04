@@ -486,10 +486,9 @@
     margin: 0;
     padding: 0;
     line-height: 1.2;
+    margin-bottom: 2rem;
 }
 
-
-/* --- RESPONSIVE PARA TABLETS Y MÓVILES --- */
 @media (max-width: 768px) {
     
     .solutions-container {
@@ -521,6 +520,175 @@
     }
 }
 
+/* Values Section */
+
+.values-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.values-title{
+    max-width: 100%;
+    text-align: left;
+    margin-left: 3rem;
+}
+
+.values-title h1{
+    font-size: clamp(1.5rem, 6vw, 4rem);
+    
+}
+
+.values-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.value-item{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #505050;
+    max-width: 340px;
+}
+
+.img-container{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.img-container img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.values-text-container{
+    text-align: left;
+    flex-grow: 1;
+}
+
+.values-text-container h2{
+    margin-block: 10px;
+    font-size: clamp(1rem, 4vw, 1.5rem);
+}
+
+.values-text-container span{
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: clamp(0.5rem, 3vw, 1rem);
+    margin-block: 10px;
+}
+
+/* Global Section */
+
+.global-section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: clamp(2.5rem, 5vw, 6rem) 0;
+    justify-content: center;
+}
+
+.global-txt-wrapper{
+    padding-inline: 3rem;
+    max-width: 500px;
+    flex: 1 1 450px; 
+    min-width: 250px;
+}
+
+.global-txt-wrapper h1{
+    font-size: clamp(1.5rem, 3vw, 4rem);
+}
+
+.global-txt-wrapper p{
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: clamp(0.5rem, 1.5vw, 1.5rem);
+    text-align: justify;   
+}
+
+.global-img-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 3rem;
+    gap: 20px;
+    flex: 1 1 450px; 
+    min-width: 250px;
+}
+
+.global-img-wrapper img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.global-img-wrapper span{
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: clamp(0.5rem, 2vw, 1rem);
+    text-align: justify;   
+}
+
+/* Final Section */
+
+.final-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 7%;
+    padding-left: 3rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: clamp(2.5rem, 5vw, 6rem) 0;           
+}
+
+/* --- IMAGEN 1: EL LOGO (CAD MARINE) --- */
+.final-section img:nth-child(1) {
+    display: block;
+    height: auto;
+    flex: 0 1 auto; 
+    margin-left: 3rem;
+    width: 100%;
+    min-width: 150px; 
+    max-width: 250px;
+}
+
+        /* --- IMAGEN 2: EL BARCO (Panorámica) --- */
+.final-section img:nth-child(2) {
+    display: block;
+    max-width: 100%;
+    min-width: 200px;
+    flex: 1 1 auto;
+    height: auto;
+    margin-left: 3rem;
+}
+
+
+@media (max-width: 768px) {
+
+    .final-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        padding: 0;
+        gap: 2rem;
+    }
+
+    .final-section img:nth-child(1) {
+        min-width: 120px;
+        max-width: 150px;
+        margin-left: 0;
+    }
+
+}
 
 
 

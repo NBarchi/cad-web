@@ -1,0 +1,13 @@
+.footer {
+  background-color: var(--primary-color);
+  max-width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.footer-txt span {
+  color: white;
+  font-weight: 600;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+}

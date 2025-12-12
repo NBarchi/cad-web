@@ -4,11 +4,17 @@
         [src]="isScrolled ? 'logos/cad-marine-color-2.png' : 'logos/cad-marine-blanco-2.png'" 
         alt="logo-cad-marine">
     </a>
-    <ul class="main-navigation">
-        <li><a routerLink="/cad-shipbroker" routerLinkActive="router-link-active">CAD Shipbroker</a></li>
-        <li><a href="#">CAD Bunkering</a></li>
+    <ul class="main-navigation" [class.active]="isMenuOpen">
+        <li><a routerLink="/cad-shipbroker" routerLinkActive="router-link-active" (click)="toggleNavbar()">CAD Shipbroker</a></li>
+        <li><a routerLink="/cad-bunkering" routerLinkActive="router-link-active" (click)="toggleNavbar()">CAD Bunkering</a></li>
         <li><a href="#">Contact us</a></li>
     </ul>
+
+    <div class="menu-toggle" (click)="toggleNavbar()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="bi bi-justify bar" viewBox="0 0 16 16" [class.scrolled]="isScrolled || isMenuOpen">
+            <path fill="currentColor" fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+        </svg>
+    </div>
 </nav>
 
 

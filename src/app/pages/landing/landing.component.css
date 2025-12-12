@@ -21,7 +21,7 @@
 .background-video{
     position: absolute;
     max-width: 100%;
-    min-height: 100vh;
+    min-height: 100dvh;
     object-fit: cover;
     z-index: 0;
 }
@@ -141,7 +141,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: clamp(2.5rem, 5vw, 6rem) 0;
+    margin-block: 5%;
+    margin-inline: 3%;
 }
 
 .about-primary-txt-wrapper p{
@@ -163,7 +164,8 @@
     padding-right: 3rem;
     box-sizing: border-box;
     overflow: hidden;
-    padding: clamp(2.5rem, 5vw, 6rem) 0;
+    margin-block: 5%;
+    margin-inline: 0%;
 }
 
 .about-primary-img{
@@ -203,7 +205,8 @@
 /* About us Section */
 
 .about-us-section{
-    padding: clamp(2.5rem, 5vw, 6rem) 3rem;
+    margin-block: 5%;
+    margin-inline: 3%;
 }
 
 .about-us-txt-wrapper{
@@ -270,7 +273,7 @@
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    padding: 3rem 0 ;
+    margin-block: 5%;
 }
 
 .mvp-content{
@@ -340,7 +343,7 @@
 
 .services-section{
     width: 100%;
-    padding: clamp(2.5rem, 5vw, 6rem) 0;
+    margin-block: 5%;
 }
 
 .services-content{
@@ -354,7 +357,7 @@
 .services-text-container{
     position: sticky;
     top: 150px;
-    padding: 0 3rem;
+    padding-inline: 3%;
 }
 
 .services-img-container{
@@ -398,13 +401,11 @@
 
     .services-text-container{
         position: static;
-        padding: 0 3rem;
         margin-bottom: 2rem;
     }
 
     .services-img-container{
        max-height: 400px;
-        
     }
 }
 
@@ -414,7 +415,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: clamp(2.5rem, 5vw, 6rem) 0;
+    margin-block: 5%;
     gap: 1rem;
 }
 
@@ -525,12 +526,13 @@
 .values-section{
     display: flex;
     flex-direction: column;
+    margin-block: 5%;
+    margin-inline: 3%;
 }
 
 .values-title{
     max-width: 100%;
     text-align: left;
-    margin-left: 3rem;
 }
 
 .values-title h1{
@@ -591,12 +593,12 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
-    padding: clamp(2.5rem, 5vw, 6rem) 0;
+    margin-block: 5%;
+    margin-inline: 3%;
     justify-content: center;
 }
 
 .global-txt-wrapper{
-    padding-inline: 3rem;
     max-width: 500px;
     flex: 1 1 450px; 
     min-width: 250px;
@@ -609,7 +611,7 @@
 .global-txt-wrapper p{
     font-weight: 300;
     line-height: 1.5;
-    font-size: clamp(0.5rem, 1.5vw, 1.5rem);
+    font-size: clamp(0.5rem, 2vw, 1.5rem);
     text-align: justify;   
 }
 
@@ -642,12 +644,12 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 100%;
+    min-width: 100%;
     gap: 7%;
-    padding-left: 3rem;
     box-sizing: border-box;
     overflow: hidden;
-    padding: clamp(2.5rem, 5vw, 6rem) 0;           
+    margin-block: 5%;
+    margin-inline: 3%;        
 }
 
 /* --- IMAGEN 1: EL LOGO (CAD MARINE) --- */
@@ -661,14 +663,13 @@
     max-width: 250px;
 }
 
-        /* --- IMAGEN 2: EL BARCO (Panorámica) --- */
+/* --- IMAGEN 2: EL BARCO (Panorámica) --- */
 .final-section img:nth-child(2) {
     display: block;
     max-width: 100%;
     min-width: 200px;
     flex: 1 1 auto;
     height: auto;
-    margin-left: 3rem;
 }
 
 

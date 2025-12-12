@@ -8,7 +8,7 @@
     z-index: 0;
 }
 
-.logo-cad-shipbroker{
+.logo-cad-bunkering{
     width: 20dvh;
     height: auto;
 }
@@ -52,21 +52,7 @@
     max-width: 100%;
 }
 
-.primary-img-wrapper{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
-.primary-img-wrapper img{
-    display: block;
-    max-width: 80%;
-    min-width: 350px;
-    height: auto;
-}
-
-/* Services Sections */
+/* Services Section */
 
 .services-section{
     display: flex;
@@ -102,10 +88,9 @@
     box-sizing: border-box;
 }
 
-.chartering-bg{ background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/img-3-broker.webp'); }
-.cargo-bg{ background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/img-4-broker.webp'); }
-.documentation-bg{ background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/img-5-broker.webp'); }
-.market-bg{ background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/img-6-broker.webp'); }
+.fuel-bg{ background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/img-1-bunkering.webp'); }
+.negotation-bg{ background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/img-2-bunkering.webp'); }
+.coordination-bg{ background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/img-3-bunkering.webp'); }
 
 
 .card-title {
@@ -145,9 +130,10 @@
     font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 
-/* Adventages Section */
 
-.advantages-section{
+/* Bunkering Section */
+
+.bunkering-section{
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -155,74 +141,55 @@
     padding-inline: 3%;
 }
 
-.advantages-title h1{
-    font-size: clamp(1.5rem, 6vw, 4rem);
+.bunkering-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-block: 5%;
+    width: 100%;
+}
+
+.bunkering-img-wrapper{
+    flex: 1 1 350px; 
+    min-height: 250px; 
+    position: relative;
+}
+
+.bunkering-img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.bunkering-text-wrapper{
+    flex: 1 1 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    position: relative;
+}
+
+
+.bunkering-text-wrapper h1{
+    font-size: clamp(1.5rem, 4vw, 4rem);
     font-weight: 600;
     margin: 0;
     padding: 0;
     line-height: 1.2;
 }
 
-.advantages-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-    width: 100%;
-}
-
-.adv-text-wrapper{
-    flex: 1 1 400px;
-    min-width: 300px;
-    padding-inline: 30px;
-}
-
-.adv-list{
-    list-style: none;
-    padding: 0;
-    margin-bottom: 40px;
-}
-
-.adv-list li{
+.bunkering-text-wrapper li{
     font-weight: 300;
     line-height: 1.5;
-    font-size: clamp(0.8rem, 2.5vw, 1.5rem);
-    padding-block: 40px;
-    border-bottom: 2px solid white;
-}
-
-.adv-img-wrapper{
-    flex: 1 1 400px;
-    min-width: 300px;
-    display: flex;
-    justify-content: flex-end;
-}
-
-
-.adv-img-wrapper img{
-    width: 100%;
-    height: auto;
-    min-height: 400px;
-    object-fit: cover;
-}
-
-@media (max-width: 768px) {
-    .advantages-wrapper{
-        gap: 10px;
-    }
-
-    .adv-text-wrapper{
-        padding-inline: 10px;
-    }
-
-    .adv-list li{  
-        padding-block: 20px;
-    }   
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    margin-bottom: 1rem;
 }
 
 /* Final Logo Section */
-
 
 .logo-img-wrapper{
     display: flex;
@@ -238,3 +205,6 @@
     max-width: 250px;
     min-width: 150px;
 }
+
+
+

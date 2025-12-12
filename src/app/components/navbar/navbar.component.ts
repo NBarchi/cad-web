@@ -9,7 +9,19 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class NavbarComponent {
 
+  isMenuOpen = false;
+
   isScrolled = false;
+
+  toggleNavbar() {
+    this.isMenuOpen = !this.isMenuOpen;
+    
+    if (this.isMenuOpen) {
+      this.isScrolled = true;
+    } else {
+      this.isScrolled = window.scrollY > 0;
+    }
+  }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {

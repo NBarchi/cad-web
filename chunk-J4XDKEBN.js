@@ -1,0 +1,1 @@
+import{bb as o,oc as t}from"./chunk-XGQZMOU2.js";var a=class e{static \u0275fac=function(n){return new(n||e)};static \u0275cmp=o({type:e,selectors:[["app-admin-page"]],decls:0,vars:0,template:function(n,p){},dependencies:[t],encapsulation:2})};export{a as AdminPageComponent};

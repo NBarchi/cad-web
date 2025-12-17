@@ -316,19 +316,19 @@
 }
 
 .mission-bg{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/img-3.webp');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../assets/img/img-3.webp');
     background-size: cover;
     background-position: top;
 }
 
 .vision-bg{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/img-4.webp');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../assets/img/img-4.webp');
     background-size: cover;
     background-position: center;
 }
 
 .purpose-bg{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/img-5.webp');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../assets/img/img-5.webp');
     background-size: cover;
     background-position: center;
 }
@@ -438,7 +438,7 @@
 .sipbroker-container{
     height: auto;
     max-width: 100%;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/img-cad-shipbroker.webp');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../assets/img/img-cad-shipbroker.webp');
     background-size: cover;
     background-position: center
 }
@@ -446,7 +446,7 @@
 .bunkering-container{
     height: auto;
     max-width: 100%;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/img-cad-bunkering.webp');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../assets/img/img-cad-bunkering.webp');
     background-size: cover;
     background-position: center
 }

@@ -88,9 +88,9 @@
     box-sizing: border-box;
 }
 
-.fuel-bg{ background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/img-1-bunkering.webp'); }
-.negotation-bg{ background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/img-2-bunkering.webp'); }
-.coordination-bg{ background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/img-3-bunkering.webp'); }
+.fuel-bg{ background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../assets/img/img-1-bunkering.webp'); }
+.negotation-bg{ background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../assets/img/img-2-bunkering.webp'); }
+.coordination-bg{ background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../assets/img/img-3-bunkering.webp'); }
 
 
 .card-title {

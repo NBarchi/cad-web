@@ -102,10 +102,10 @@
     box-sizing: border-box;
 }
 
-.chartering-bg{ background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/img-3-broker.webp'); }
-.cargo-bg{ background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/img-4-broker.webp'); }
-.documentation-bg{ background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/img-5-broker.webp'); }
-.market-bg{ background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/img/img-6-broker.webp'); }
+.chartering-bg{ background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../assets/img/img-3-broker.webp'); }
+.cargo-bg{ background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../assets/img/img-4-broker.webp'); }
+.documentation-bg{ background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../assets/img/img-5-broker.webp'); }
+.market-bg{ background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../assets/img/img-6-broker.webp'); }
 
 
 .card-title {

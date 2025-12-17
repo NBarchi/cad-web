@@ -16,8 +16,11 @@
                 <h2>{{ news.edition }}</h2>
             </div>
             <div class="content-wrapper" [innerHTML]="safeContent$ | async"></div>
+            <div class="img-container">
+                <img src="img/img-news-1.webp" alt="">
+            </div>
+            
             <button class="btn-primary" style="align-self: flex-start" routerLink="/contact">Contact us</button>
         </div>
-        
     </div>
 </div>

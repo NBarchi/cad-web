@@ -6,10 +6,11 @@ import { Prospect } from '../../types/prospect';
 import { CommonModule } from '@angular/common';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-contact',
-  imports: [CommonModule ,FormsModule, ReactiveFormsModule, ToastModule],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule, ToastModule, RouterLink],
   providers: [MessageService],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'

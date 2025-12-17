@@ -7,7 +7,8 @@
     <ul class="main-navigation" [class.active]="isMenuOpen">
         <li><a routerLink="/cad-shipbroker" routerLinkActive="route-active" (click)="closeMenu()">CAD Shipbroker</a></li>
         <li><a routerLink="/cad-bunkering" routerLinkActive="active" (click)="closeMenu()" >CAD Bunkering</a></li>
-        <li><a routerLink="/contact">Contact us</a></li>
+        <li><a [routerLink]="['/']" fragment="news">News</a></li>
+        <li><a routerLink="/contact" (click)="closeMenu()">Contact us</a></li>
     </ul>
 
     <div class="menu-toggle" (click)="toggleNavbar()">

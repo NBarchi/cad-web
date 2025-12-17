@@ -87,7 +87,7 @@
 .global-reach-section{
     display:  grid;
     grid-template-columns: 1fr 1fr;
-    padding-bottom: 6px;
+    margin-bottom: 5%;
 }
 
 .global-reach-txt-wrapper{
@@ -101,7 +101,7 @@
 .global-reach-txt-wrapper p{
     font-weight: 300;
     line-height: 1.5;
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-size: clamp(0.5rem, 2.5vw, 1.5rem);
     text-align: left;
     width: 60%;
 }
@@ -149,7 +149,7 @@
     font-weight: 300;
     text-align: center;
     line-height: 1.5;
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-size: clamp(0.5rem, 2.5vw, 1.5rem);
     max-width: 80%;
 }
 

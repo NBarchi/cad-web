@@ -2,7 +2,7 @@
     <a routerLink="/home">
         <img class="logo-navbar" 
         [src]="isScrolled ? 'logos/cad-marine-color-2.png' : 'logos/cad-marine-blanco-2.png'" 
-        alt="logo-cad-marine">
+        alt="logo-cad-marine" (click)="closeMenu()">
     </a>
     <ul class="main-navigation" [class.active]="isMenuOpen">
         <li><a routerLink="/cad-shipbroker" routerLinkActive="route-active" (click)="closeMenu()">CAD Shipbroker</a></li>

@@ -48,7 +48,7 @@
     font-weight: 300;
     text-align: center;
     line-height: 1.5;
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-size: clamp(0.5rem, 2.5vw, 1.5rem);
     max-width: 100%;
 }
 
@@ -185,8 +185,14 @@
 .bunkering-text-wrapper li{
     font-weight: 300;
     line-height: 1.5;
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(0.5rem, 2.5vw, 1.5rem);
     margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .bunkering-wrapper{
+        gap: 1rem
+    }
 }
 
 /* Final Logo Section */

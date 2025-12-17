@@ -7,6 +7,7 @@ import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { providePrimeNG } from 'primeng/config';
 import Aura from '@primeuix/themes/aura';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 export const appConfig: ApplicationConfig = {
   providers:[ 
@@ -35,6 +36,6 @@ export const appConfig: ApplicationConfig = {
       })
     ), 
     provideAuth(() => getAuth()), 
-    provideFirestore(() => getFirestore())
+    provideFirestore(() => getFirestore()),
   ]
 };

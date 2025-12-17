@@ -3,10 +3,12 @@ import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { News } from '../../types/news';
 import { NewsService } from '../../services/news/news.service';
+import { AnimateOnScrollModule } from 'primeng/animateonscroll';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-landing',
-  imports: [ RouterLink, CommonModule],
+  imports: [ RouterLink, CommonModule, AnimateOnScrollModule, ButtonModule],
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.css'
 })

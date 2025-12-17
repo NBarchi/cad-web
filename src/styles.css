@@ -3,6 +3,10 @@
     --primary-color: #fb8663;
 }
 
+.primary-color{
+    color: var(--primary-color);
+}
+
 body{
     font-family: "Alexandria", sans-serif;
     margin: 0;
@@ -14,7 +18,7 @@ body{
 }
 
 
-/*--Global styles for banner section--*/
+/* Global styles for banner section */
 
 .banner{
     position: relative;
@@ -36,3 +40,23 @@ body{
     pointer-events: none;
     z-index: 1;
 }
+
+/* Button Style */
+
+.btn-primary{
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: clamp(0.75rem, 2.5vw, 1rem);
+    cursor: pointer;
+    font-weight: 500;
+    transition: opcacity 0.3s ease;
+}
+
+.btn-primary:hover{
+   background-color: black;
+    transition: 600ms ease;
+}
+
+

@@ -5,9 +5,9 @@
         alt="logo-cad-marine">
     </a>
     <ul class="main-navigation" [class.active]="isMenuOpen">
-        <li><a routerLink="/cad-shipbroker" routerLinkActive="router-link-active" (click)="toggleNavbar()">CAD Shipbroker</a></li>
-        <li><a routerLink="/cad-bunkering" routerLinkActive="router-link-active" (click)="toggleNavbar()">CAD Bunkering</a></li>
-        <li><a href="#">Contact us</a></li>
+        <li><a routerLink="/cad-shipbroker" routerLinkActive="route-active" (click)="closeMenu()">CAD Shipbroker</a></li>
+        <li><a routerLink="/cad-bunkering" routerLinkActive="active" (click)="closeMenu()" >CAD Bunkering</a></li>
+        <li><a href="/contact">Contact us</a></li>
     </ul>
 
     <div class="menu-toggle" (click)="toggleNavbar()">

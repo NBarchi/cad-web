@@ -13,6 +13,16 @@ export class NavbarComponent {
 
   isScrolled = false;
 
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.isScrolled = window.scrollY > 0;
+  }
+
+  closeMenu() {
+    this.isMenuOpen = false;
+    this.isScrolled = window.scrollY > 0;
+  }
+
   toggleNavbar() {
     this.isMenuOpen = !this.isMenuOpen;
     
@@ -21,11 +31,6 @@ export class NavbarComponent {
     } else {
       this.isScrolled = window.scrollY > 0;
     }
-  }
-
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    this.isScrolled = window.scrollY > 0;
   }
 
 }

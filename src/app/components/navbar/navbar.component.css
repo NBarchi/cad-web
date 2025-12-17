@@ -17,6 +17,10 @@
     box-sizing: border-box;
 }
 
+.route-active{
+    color: var(--primary-color);
+}
+
 .navbar.scrolled{
     background-color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -94,6 +98,10 @@
     .main-navigation li a {
         color: black; 
         font-size: 1.2rem;
+    }
+
+    .main-navigation li a:hover {
+        color: var(--primary-color);
     }
 
     .navbar{

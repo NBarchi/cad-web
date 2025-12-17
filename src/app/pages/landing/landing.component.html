@@ -23,7 +23,7 @@
             </p>
         </div>
         <div class="global-reach-img-wrapper">
-            <img ngSrc="img/img-global-reach-1.webp" priority width="950" height="540" alt="global-reach-image" class="global-reach-img">
+            <img src="img/img-global-reach-1.webp" alt="global-reach-image" class="global-reach-img">
         </div>
     </section>
 
@@ -36,8 +36,8 @@
     </div>
 
     <div class="about-primary-img-wrapper">    
-        <img ngSrc="img/img-2.webp" priority width="1300" height="550" alt="about-primary-image" class="about-primary-img">
-        <img ngSrc="logos/cad-marine-blanco-2.png" priority width="350" height="150" alt="cad-marine-logo" class="about-primary-img-logo">     
+        <img src="img/img-2.webp"  alt="about-primary-image" class="about-primary-img">
+        <img src="logos/cad-marine-blanco-2.png"  alt="cad-marine-logo" class="about-primary-img-logo">     
     </div>
 
     <section class="about-us-section">
@@ -113,7 +113,7 @@
                 </div>
             </div>
             <div class="services-img-container">
-                <img ngSrc="img/img-6.webp" priority height="920" width="900" alt="" class="services-img">
+                <img src="img/img-6.webp" alt="" class="services-img">
             </div>  
         </div>
     </section>
@@ -123,12 +123,12 @@
             <h1>Explore our solutions</h1>
         </div>
         <div class="solutions-container">
-            <div class="sipbroker-container solutions-item">
+            <a class="sipbroker-container solutions-item" routerLink="/cad-shipbroker">    
                 <img src="logos/cad-shipbroker-blanco-color.png" alt="logo-cad-shipbroker-blanco-color" class="logo-solutions">
-            </div>
-            <div class="bunkering-container solutions-item">  
-                <img src="logos/cad-bunkering-blanco-color.png" alt="logo-cad-bunkering-blanco-color" class="logo-solutions">
-            </div>
+            </a>
+            <a class="bunkering-container solutions-item" routerLink="/cad-bunkering">
+                <img src="logos/cad-bunkering-blanco-color.png" alt="logo-cad-bunkering-blanco-color" class="logo-solutions">  
+            </a>  
         </div>
     </section>
 
@@ -193,6 +193,7 @@
                 across the Americas, Europe, and Asia. We support vessels and clients in 
                 energy, bulk, tanker, and project cargo segments, ensuring reliable coordination in every port of call.
             </p>
+            <button class="btn-primary" routerLink="/contact">Learn More</button>
         </div>
         <div class="global-img-wrapper">
             <img src="img/img-global.png">
@@ -200,7 +201,45 @@
         </div>
     </section>
 
-    <!-- Sección de Noticiasa en Desarrollo -->
+    <!-- Sección de Noticia en Desarrollo -->
+     <section class="news-section">
+        <div class="news-container">
+            <div class="news-title">
+                <h1>News</h1>
+            </div>
+            <div class="news-grid">
+                
+                <div class="featured-card">
+                    <h1>Featured</h1>
+                    <div class="img-news-wrapper">
+                        <img src="img/img-news-section.webp" alt="">
+                    </div>
+                    <div class="featured-content">
+                        <span class="category">FEATURE</span>
+                        <a [routerLink]="['/news', feauturedNews?.id]">
+                            <h3>{{feauturedNews?.title}}</h3>
+                        </a>
+                        <div class="meta-featured">
+                            <p class="subtitle">{{ feauturedNews?.edition }}</p>
+                        <span class="date">{{ feauturedNews?.date.toDate() | date:'MMMM yyyy'  }}</span>
+                        </div>   
+                    </div>
+                </div>
+                <div class="news-list">
+                    <div class="news-item" *ngFor="let item of olderNews">
+                        <span class="category">OLDEST</span>
+                        <a [routerLink]="['/news', item.id]">
+                            <h3>{{ item.title }}</h3>
+                        </a>
+                        <div class="meta">
+                            <span>{{ item.edition }}</span>
+                            <span class="date">{{ item.date.toDate() | date:'MMMM yyyy' }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
 
     <section class="final-section">
         <img src="logos/cad-marine-blanco-2.png" alt="cad-marine-logo">

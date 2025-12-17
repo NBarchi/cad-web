@@ -101,7 +101,7 @@
 .global-reach-txt-wrapper p{
     font-weight: 300;
     line-height: 1.5;
-    font-size: clamp(0.5rem, 2.5vw, 1.5rem);
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
     text-align: left;
     width: 60%;
 }
@@ -149,7 +149,7 @@
     font-weight: 300;
     text-align: center;
     line-height: 1.5;
-    font-size: clamp(0.5rem, 2.5vw, 1.5rem);
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
     max-width: 80%;
 }
 
@@ -231,7 +231,7 @@
 }
 
 .about-us-title span{
-    font-size: clamp(0.5rem, 2vw, 1.5rem);
+    font-size: clamp(1rem, 2vw, 1.5rem);
     font-weight: 200;
 }
 
@@ -302,16 +302,17 @@
 }
 
 .mvp-text{
-    padding: 0 3rem;
+    padding: 0 1rem;
     justify-self: center;
     align-self: center;
+    text-align: justify;
     max-width: 600px;
 }
 
 .mvp-text p{
     font-weight: 300;
     line-height: 1.5;
-    font-size: clamp(0.5rem, 2.5vw, 1.5rem);
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
 .mission-bg{
@@ -335,7 +336,16 @@
 @media (max-width: 768px) {
     .mvp-content{
         grid-template-columns: 1fr;
-        min-height: 30vh;
+        min-height: auto;
+        padding: 40px 0;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .mvp-text{
+        padding: 0 1.5rem;
+        text-align: justify;
     }
 }
 
@@ -382,14 +392,14 @@
 }
 
 .services-title span{
-    font-size: clamp(0.5rem, 2vw, 1.5rem);
+    font-size: clamp(1rem, 2vw, 1.5rem);
     font-weight: 200;
 }
 
 .services-text ul li{
     font-weight: 300;
     line-height: 1.5;
-    font-size: clamp(0.5rem, 2.5vw, 1.5rem);
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
     margin-bottom: 1rem;
 }
 
@@ -487,7 +497,6 @@
     margin: 0;
     padding: 0;
     line-height: 1.2;
-    margin-bottom: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -611,7 +620,7 @@
 .global-txt-wrapper p{
     font-weight: 300;
     line-height: 1.5;
-    font-size: clamp(0.5rem, 2vw, 1.5rem);
+    font-size: clamp(1rem, 2vw, 1.5rem);
     text-align: justify;   
 }
 
@@ -638,6 +647,153 @@
     text-align: justify;   
 }
 
+/* News Section */
+
+.news-section{
+    display: flex;
+    flex-direction: column;
+    padding-block: 5%;
+}
+
+.news-title h1{
+    font-size: clamp(1.5rem, 6vw, 4rem);
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    padding-inline: 3%;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.news-grid{
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: flex-start;
+    gap: clamp(1rem, 4vw, 5rem);
+    padding-inline: 2%;
+}
+
+.featured-card {
+    position: relative;
+    flex: 3; 
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.featured-card h1{
+    position: absolute;
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: clamp(1rem, 3vw, 3rem);
+}
+
+.featured-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: clamp(1rem, 3vw, 3rem);
+    width: 100%;
+    z-index: 2;
+
+}
+
+.img-news-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.img-news-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.featured-content .category {
+    font-size: clamp(0.5rem, 1vw, 1rem);
+    letter-spacing: 1.5px;
+    display: block;
+}
+
+.featured-content h3 {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    line-height: 1.2;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.meta-featured{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: clamp(0.5rem, 1.5vw, 1rem);
+}
+
+.featured-content .subtitle {
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.news-list {
+    flex: 2; 
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-item {
+    border-top: 1px solid white; 
+    min-width: 50%; ;
+    padding: 3%;
+    transition: background-color 0.3s ease;
+}
+
+.news-item.category{
+    font-size: clamp(0.5rem, 1vw, 1rem);
+    letter-spacing: 1.5px;
+    display: block;
+}
+
+.news-item h3 {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    line-height: 1.2;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.meta{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: clamp(0.5rem, 2vw, 2rem);
+}
+
+.meta span{
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.news-grid a{
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 768px) {
+    .news-list {
+        min-width: 100%; /* Ocupa todo el ancho disponible */
+        flex: auto;
+    }
+}
+
+
 /* Final Section */
 
 .final-section {
@@ -649,21 +805,19 @@
     box-sizing: border-box;
     overflow: hidden;
     margin-block: 5%;
-    margin-inline: 3%;        
+            
 }
 
-/* --- IMAGEN 1: EL LOGO (CAD MARINE) --- */
 .final-section img:nth-child(1) {
     display: block;
     height: auto;
     flex: 0 1 auto; 
-    margin-left: 3rem;
+    margin-left: 3%;
     width: 100%;
     min-width: 150px; 
     max-width: 250px;
 }
 
-/* --- IMAGEN 2: EL BARCO (Panorámica) --- */
 .final-section img:nth-child(2) {
     display: block;
     max-width: 100%;
@@ -689,12 +843,12 @@
         margin-left: 0;
     }
 
+    .final-section img:nth-child(2) {
+        min-width: 0;
+        width: 100%;
+    }
+
 }
-
-
-
-
-
 
 
 

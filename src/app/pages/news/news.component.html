@@ -1,0 +1,23 @@
+<div *ngIf = "news$ | async as news"  class="news-wrapper">
+    <div  class="news-banner">
+        <img src="img/img-bg-news.webp" alt="" class="news-banner-img">
+        <div class="news-overlay-img"></div>
+        <div class="news-banner-content">
+            <h1>{{ news.title }}</h1>
+        </div>
+    </div>
+
+    <div class="news-hero-wrapper">
+        <div class="news-hero">
+            <div class="date-wrapper">
+                <h3>{{ news.date.toDate() | date:'MMMM yyyy' }}</h3>
+            </div>
+            <div class="edition-wrapper">
+                <h2>{{ news.edition }}</h2>
+            </div>
+            <div class="content-wrapper" [innerHTML]="safeContent$ | async"></div>
+            <button class="btn-primary" style="align-self: flex-start" routerLink="/contact">Contact us</button>
+        </div>
+        
+    </div>
+</div>

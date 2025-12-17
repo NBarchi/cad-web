@@ -48,7 +48,7 @@
     font-weight: 300;
     text-align: center;
     line-height: 1.5;
-    font-size: clamp(0.5rem, 2.5vw, 1.5rem);
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
     max-width: 100%;
 }
 
@@ -138,7 +138,7 @@
 }
 
 .card-text p {
-    max-width: 95%;
+    max-width: 90%;
     text-align: center;
     font-weight: 300;
     line-height: 1.5;
@@ -151,22 +151,20 @@
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    margin-block: 5%;
+    margin: 0;
     padding-inline: 3%;
 }
 
 .advantages-title h1{
     font-size: clamp(1.5rem, 6vw, 4rem);
     font-weight: 600;
-    margin: 0;
-    padding: 0;
+    
     line-height: 1.2;
 }
 
 .advantages-wrapper{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
     gap: 50px;
     width: 100%;
@@ -209,7 +207,7 @@
 
 @media (max-width: 768px) {
     .advantages-wrapper{
-        gap: 10px;
+        gap: 30px;
     }
 
     .adv-text-wrapper{

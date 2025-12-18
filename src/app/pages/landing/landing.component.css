@@ -13,7 +13,7 @@
     top: 0;
     left: 0;
     width: auto;
-    height: 100vh;
+    min-height: 100svh;
     overflow: hidden;
     flex-shrink: 0;
 }
@@ -21,7 +21,7 @@
 .background-video{
     position: absolute;
     max-width: 100%;
-    min-height: 100dvh;
+    min-height: 100svh;
     object-fit: cover;
     z-index: 0;
 }
@@ -138,9 +138,7 @@
 /* About Primary Text Section */
 
 .about-primary-txt-wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     margin-block: 5%;
     margin-inline: 3%;
 }
@@ -148,6 +146,7 @@
 .about-primary-txt-wrapper p{
     font-weight: 300;
     text-align: center;
+    margin: 0 auto;
     line-height: 1.5;
     font-size: clamp(0.5rem, 2.5vw, 1.5rem);
     max-width: 80%;

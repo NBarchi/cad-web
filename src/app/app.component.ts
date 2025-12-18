@@ -24,4 +24,5 @@ export class AppComponent {
       this.showLayout = !hiddenRoutes.includes(this.router.url);
     });
   }
+
 }

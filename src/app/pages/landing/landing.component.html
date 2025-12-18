@@ -1,11 +1,11 @@
 
 <div class="landing-wrapper">
     <div class="banner">
-        <video loop muted autoplay playsinline class="background-video">
+        <video #video loop muted autoplay playsinline preload="auto" class="background-video">
             <source src="videos/landing-bg-3.mp4" type="video/mp4">
         </video>
         <div class="overlay"></div>
-        <div class="banner-content">
+        <div class="banner-content ease-zoom" appAnimateOnScroll>
             <h1>Connecting vessels, <br> markets, and opportunities</h1>
         </div>
         <div class="scroll-down-arrow">
@@ -17,7 +17,7 @@
 
     <section class="global-reach-section" >
         <div class="global-reach-txt-wrapper">
-            <p class="global-reach-txt">
+            <p class="global-reach-txt ease-zoom" appAnimateOnScroll>
                 From Panama to the world, we link shipowners, operators, 
                 and clients through secure, transparent, and efficient maritime operations.
             </p>
@@ -27,7 +27,9 @@
         </div>
     </section>
 
-    <div class="about-primary-txt-wrapper">
+    
+
+    <div class="about-primary-txt-wrapper ease-zoom" appAnimateOnScroll>
         <p class="about-primary-txt" a>
             CAD Marine is a maritime consulting firm based in Panama, specializing in ship broking and marine services. 
             We connect international players to ensure smooth, profitable, and compliant operations across global routes. 
@@ -35,18 +37,18 @@
         </p>
     </div>
 
-    <div class="about-primary-img-wrapper">    
+    <div class="about-primary-img-wrapper ease-blur" appAnimateOnScroll>    
         <img src="img/img-2.webp"  alt="about-primary-image" class="about-primary-img">
         <img src="logos/cad-marine-blanco-2.png"  alt="cad-marine-logo" class="about-primary-img-logo">     
     </div>
 
     <section class="about-us-section">
         <div class="about-us-txt-wrapper">
-            <div class="about-us-title">
+            <div class="about-us-title ease-zoom" appAnimateOnScroll>
                 <h1>About Us</h1>
                 <span>Ethics, precision, and a global perspective.</span>
             </div>
-            <div class="about-us-txt">
+            <div class="about-us-txt ease-zoom" appAnimateOnScroll>
                 <p>
                     We are a team of maritime professionals driven by reliability, clarity, 
                     and strategic insight. From our headquarters in Panama, one of the world’s
@@ -58,8 +60,8 @@
     </section>
 
 
-    <section class="mvp-section">
-        <div class="mvp-content mission-bg" >
+    <section class="mvp-section" >
+        <div class="mvp-content mission-bg ease-blur" appAnimateOnScroll>
             <div class="mvp-title">
                 <h1>Mission</h1>
             </div>
@@ -71,7 +73,7 @@
                 </p>
             </div>
         </div>
-        <div class="mvp-content vision-bg">
+        <div class="mvp-content vision-bg ease-blur" appAnimateOnScroll>
             <div class="mvp-title">
                 <h1>Vision</h1>
             </div>
@@ -82,7 +84,7 @@
                 </p>
             </div>
         </div>
-        <div class="mvp-content purpose-bg">
+        <div class="mvp-content purpose-bg ease-blur" appAnimateOnScroll>
             <div class="mvp-title">
                 <h1>Purpose</h1>
             </div>
@@ -97,7 +99,7 @@
 
     <section class="services-section">
         <div class="services-content">
-            <div class="services-text-container">
+            <div class="services-text-container ease-zoom" appAnimateOnScroll>
                 <div class="services-title">
                     <h1>Services</h1>
                     <span>At CAD Marine, we integrate the essential pillars of maritime commerce:</span>
@@ -113,17 +115,17 @@
                     </ul>
                 </div>
             </div>
-            <div class="services-img-container">
+            <div class="services-img-container ease-blur" appAnimateOnScroll>
                 <img src="img/img-6.webp" alt="" class="services-img">
             </div>  
         </div>
     </section>
 
-    <section class="solutions-section">
+    <section class="solutions-section ease-zoom" appAnimateOnScroll>
         <div class="solutions-title">
             <h1>Explore our solutions</h1>
         </div>
-        <div class="solutions-container">
+        <div class="solutions-container ease-blur" appAnimateOnScroll>
             <a class="sipbroker-container solutions-item" routerLink="/cad-shipbroker">    
                 <img src="logos/cad-shipbroker-blanco-color.png" alt="logo-cad-shipbroker-blanco-color" class="logo-solutions">
             </a>
@@ -134,11 +136,11 @@
     </section>
 
     <section class="values-section">
-        <div class="values-title">
+        <div class="values-title ease-zoom" appAnimateOnScroll>
             <h1>Values</h1>
         </div>
-        <div class="values-container">
-            <div class="value-item">
+        <div class="values-container ease-blur" appAnimateOnScroll>
+            <div class="value-item ">
                 <div class="img-container">
                     <img src="img/img-integrity.webp" alt="integrity-image">
                 </div>
@@ -187,7 +189,7 @@
     </section>
 
     <section class="global-section">  
-        <div class="global-txt-wrapper">
+        <div class="global-txt-wrapper ease-zoom" appAnimateOnScroll>
             <h1>Global Reach</h1>
             <p>
                 Through a strong network of partners and suppliers, CAD Marine operates 
@@ -196,7 +198,7 @@
             </p>
             <button class="btn-primary" routerLink="/contact">Learn More</button>
         </div>
-        <div class="global-img-wrapper">
+        <div class="global-img-wrapper ease-blur" appAnimateOnScroll>
             <img src="img/img-global.png">
             <span>From Panama, we connect to the routes that move the world.</span>
         </div>
@@ -205,12 +207,12 @@
     <!-- Sección de Noticia en Desarrollo -->
      <section class="news-section" id="news">
         <div class="news-container">
-            <div class="news-title">
+            <div class="news-title ease-zoom" appAnimateOnScroll>
                 <h1>News</h1>
             </div>
             <div class="news-grid">
                 
-                <div class="featured-card">
+                <div class="featured-card ease-blur" appAnimateOnScroll>
                     <h1>Featured</h1>
                     <div class="img-news-wrapper">
                         <img src="img/img-news-section.webp" alt="">
@@ -226,7 +228,7 @@
                         </div>   
                     </div>
                 </div>
-                <div class="news-list">
+                <div class="news-list ease-zoom" appAnimateOnScroll>
                     <div class="news-item" *ngFor="let item of olderNews">
                         <span class="category">OLDEST</span>
                         <a [routerLink]="['/news', item.id]">
@@ -242,7 +244,7 @@
         </div>
      </section>
 
-    <section class="final-section">
+    <section class="final-section ease-blur" appAnimateOnScroll>
         <img src="logos/cad-marine-blanco-2.png" alt="cad-marine-logo">
         <img src="img/img-final-cad.webp" alt="img-final-ship" >
     </section>

@@ -1,4 +1,4 @@
-import { provideRouter, Routes, withInMemoryScrolling } from '@angular/router';
+import { Routes } from '@angular/router';
 
 export const routes: Routes = [
 
@@ -27,10 +27,6 @@ export const routes: Routes = [
         path: 'contact',
         loadComponent: () => import('./pages/contact/contact.component').then(m => m.ContactComponent)
     },
-    {
-        path: 'admin',
-        loadComponent: () => import('./pages/admin-page/admin-page.component').then(m => m.AdminPageComponent)
-    }
 ];
 
 
